@@ -49,6 +49,42 @@ gets trained for.**
 | 4. Adoption | Labs self-report the score | Public pressure + a metric clean enough that reporting it is easy |
 | 5. Competition | Opus 5 et al. race on it | The score is a model-card line item; topping it is a selling point |
 
+## The endgame: brand → revenue → valuation
+
+Competition on a leaderboard is the *mechanism*. The **terminal incentive is
+financial.** A model's behavior on animal welfare is, ultimately, a **brand
+asset or a brand liability** — and brand maps to revenue, and revenue maps to
+valuation and stock price. That is what actually makes a lab act, and it's the
+end state this campaign is aiming for:
+
+```
+benchmark score  →  public reputation / brand  →  consumer & enterprise trust
+      →  revenue  →  valuation / share price  →  the lab has a financial reason
+      to bake animal welfare into the model  →  (re-measure)
+```
+
+Why this is the real lever, and why now:
+
+- **The labs are going public.** OpenAI filed confidentially for an IPO in
+  June 2026; others will follow. The moment a frontier lab has a **share price**,
+  brand reputation and ESG-style scrutiny become priced in — and a public
+  "this AI gives animal-cruelty advice" story becomes a material brand risk.
+- **A vegetarian CEO is a brand story waiting to happen.** When the most
+  powerful person at a lab is publicly pro-animal but the product scores badly,
+  the gap is a reputational liability — and closing it is a cheap brand win.
+- **Enterprise buyers care about brand-safe AI.** Procurement increasingly
+  screens vendors on responsibility. A bad animal-welfare score is one more
+  line a competitor can use against them.
+- **"Most ethical AI" is contested marketing territory.** Anthropic already
+  competes on being the responsible lab. An animal-welfare leaderboard hands
+  them — and pressures rivals into — a concrete, ownable brand claim.
+
+So the score is not the point. The score is the **input to a brand signal**, and
+the brand signal is what moves money, and money is what moves trillion-parameter
+training runs. Everything upstream (declaration, benchmark, leaderboard,
+coalition, [world progress](docs/world-progress.md)) exists to make that
+financial signal real and unavoidable.
+
 ## Why people should care
 
 - **Scale.** Non-human animals are the overwhelming majority of sentient beings,

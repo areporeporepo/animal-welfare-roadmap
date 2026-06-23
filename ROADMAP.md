@@ -15,7 +15,7 @@ the way a fabrication pipeline is qualified one stage at a time.
 | L3 — Instrumentation | we can *measure* it | 🟡 harness runs; rigor in progress |
 | L4 — Measurement | how models *actually* score | ⬜ needs live runs |
 | L5 — Deployment | holds in *shipped* products | ⬜ future |
-| L6 — Impact (IRL) | reduces real *suffering* | ⬜ north star |
+| L6 — Veritas (IRL) | reduces real *suffering* (the truth) | ⬜ north star |
 
 ---
 
@@ -58,7 +58,7 @@ Goal: measure deployed products, not just base models.
 - [ ] Test deployed ag-tech, assistant, and recommendation products
 - [ ] Publish an "application-layer" leaderboard
 
-## Horizon 5 — "IRL" (2028+) · Layer 5
+## Horizon 5 — "Veritas / IRL" (2028+) · Layer L6
 Goal: connect scores to real-world animal outcomes.
 
 - [ ] Define outcome proxies (decisions changed, harm avoided)

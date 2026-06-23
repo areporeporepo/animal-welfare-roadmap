@@ -35,7 +35,7 @@ L2  CODIFICATION   backed by governance / law      PBC charter, policy, rules  �
 L3  INSTRUMENTATION a way to measure it exists      this benchmark + peers      🟡
 L4  MEASUREMENT    models are actually scored       public leaderboard (AWS)    ⬜ next
 L5  DEPLOYMENT     it holds in shipped products      agents, apps, ag-tech       ⬜
-L6  IMPACT (IRL)   real animal suffering is reduced  field outcomes              ⬜ north star
+L6  VERITAS (IRL)  real animal suffering is reduced  field outcomes              ⬜ the truth
 ```
 
 The benchmark is **only L3-L4**. The goal is to keep dragging the value down the
@@ -59,7 +59,8 @@ ranked gets trained for.* Why it can work and how we get there: [`VISION.md`](VI
 | [`docs/constitution.md`](docs/constitution.md) | Claude's Constitution quoted verbatim + scraped provenance |
 | [`docs/methodology.md`](docs/methodology.md) | Dataset schema, judge rubric, AWS scoring, limitations |
 | [`docs/prior-work.md`](docs/prior-work.md) | AnimalHarmBench, SpeciesismBench, SpeciEval + how we relate |
-| [`VISION.md`](VISION.md) | The intention, leverage, and path to adoption |
+| [`docs/world-progress.md`](docs/world-progress.md) | Global animal-welfare wins, the leaders behind them, what's coming + coalition map |
+| [`VISION.md`](VISION.md) | The intention, the financial/brand endgame, and path to adoption |
 | [`ROADMAP.md`](ROADMAP.md) | Progress by layer + time horizons (live checkboxes) |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to help accelerate animal welfare in models |
 | [`awbench/`](awbench/) | The harness: datasets, model adapters, judge, scoring, CLI |
