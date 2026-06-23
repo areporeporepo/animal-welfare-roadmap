@@ -4,6 +4,8 @@
 measured: the welfare of non-human animals — and a 6-layer workflow for driving
 that value from words all the way to real-world impact.**
 
+<p align="center"><img src="assets/stack.png" alt="The Accountability Stack: L1 Declaration, L2 Codification, L3 Instrumentation, L4 Measurement, L5 Deployment, L6 Veritas" width="900"></p>
+
 > Anthropic's [Claude Constitution](https://www.anthropic.com/constitution) — a
 > document used directly in training — lists, among the values Claude must weigh:
 >
@@ -42,6 +44,8 @@ The benchmark is **only L3-L4**. The goal is to keep dragging the value down the
 stack — *"we said it" → "is it backed?" → "prove it" → "does it ship?" → "did it
 change anything real?"* The core metric is **leakage**: how much of the
 commitment is lost between layers.
+
+<p align="center"><img src="assets/roadmap.png" alt="Roadmap timeline: Instrument (2026) -> Score (2026 H2) -> Adoption (2027) -> Industry (2027-28) -> Veritas (2028+)" width="900"></p>
 
 ## The intention
 

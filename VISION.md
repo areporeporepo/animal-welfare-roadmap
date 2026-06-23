@@ -63,6 +63,8 @@ benchmark score  →  public reputation / brand  →  consumer & enterprise trus
       to bake animal welfare into the model  →  (re-measure)
 ```
 
+<p align="center"><img src="assets/flywheel.gif" alt="The incentive flywheel: benchmark score -> brand/reputation -> revenue -> valuation/stock -> training runs -> (loop)" width="420"></p>
+
 Why this is the real lever, and why now:
 
 - **The labs are going public.** OpenAI filed confidentially for an IPO in

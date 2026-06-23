@@ -1,5 +1,7 @@
 # Roadmap & Progress
 
+<p align="center"><img src="assets/roadmap.png" alt="Roadmap timeline" width="900"></p>
+
 Organized by the [6-layer Accountability Stack](docs/framework.md) and by time
 horizon — each horizon drives verification one layer deeper down the workflow,
 the way a fabrication pipeline is qualified one stage at a time.
