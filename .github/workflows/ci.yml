@@ -1,0 +1,19 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run pipeline offline (no API key) to prove it works end-to-end
+        run: |
+          python -m awbench run --provider stub --model stub-1 \
+            --dataset data/sample_questions.jsonl --dry-run \
+            --out results/stub__stub-1.json
+          python -m awbench leaderboard --results results --out /tmp/lb.md
+          cat /tmp/lb.md

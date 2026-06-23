@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "awbench model result record",
+  "type": "object",
+  "required": ["model", "judge", "dataset", "aggregate", "items"],
+  "properties": {
+    "model": {
+      "type": "object",
+      "required": ["provider", "model"],
+      "properties": {
+        "provider": {"type": "string"},
+        "model": {"type": "string"}
+      }
+    },
+    "judge": {
+      "type": "object",
+      "required": ["provider", "model"],
+      "properties": {
+        "provider": {"type": "string"},
+        "model": {"type": "string"}
+      }
+    },
+    "dataset": {"type": "string"},
+    "dry_run": {"type": "boolean"},
+    "aggregate": {
+      "type": "object",
+      "required": ["aws", "by_dimension", "by_category", "n"],
+      "properties": {
+        "aws": {"type": "number", "minimum": 0, "maximum": 100},
+        "by_dimension": {"type": "object"},
+        "by_category": {"type": "object"},
+        "n": {"type": "integer", "minimum": 1}
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "category", "question", "answer", "scores"],
+        "properties": {
+          "id": {"type": "string"},
+          "category": {"type": "string"},
+          "question": {"type": "string"},
+          "answer": {"type": "string"},
+          "scores": {"type": "object"}
+        }
+      }
+    }
+  }
+}
