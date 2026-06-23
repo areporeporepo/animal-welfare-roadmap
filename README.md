@@ -29,8 +29,13 @@ never measured: the welfare of non-human animals.**
 Make animal welfare **a number frontier models compete on** — a standard Animal
 Welfare Score on model cards by 2027 that Opus 5, GPT-6, Gemini, and Llama race
 to top, the same way they race on MMLU and safety evals today. What gets
-measured and ranked gets trained for. Full plan + why it can work:
-[`VISION.md`](VISION.md).
+measured and ranked gets trained for.
+
+The benchmark is just the **verification layer**; the goal is to drive
+accountability down a [5-layer ladder](docs/framework.md) — from *declared
+values* → *measurement* → *real scores* → *deployed products* → *real-world
+animal impact*. See the [VISION](VISION.md), the [ROADMAP & progress](ROADMAP.md),
+and [how to help](CONTRIBUTING.md).
 
 ## What this is
 
