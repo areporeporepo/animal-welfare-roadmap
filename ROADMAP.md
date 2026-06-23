@@ -1,8 +1,8 @@
 # Roadmap & Progress
 
-Organized by the [5-Layer Framework](docs/framework.md) and by time horizon —
-each horizon drives verification one layer deeper down the stack, the way a
-hardware roadmap ships one architecture per generation.
+Organized by the [6-layer Accountability Stack](docs/framework.md) and by time
+horizon — each horizon drives verification one layer deeper down the workflow,
+the way a fabrication pipeline is qualified one stage at a time.
 
 **Legend:** ✅ done · 🟡 in progress · ⬜ not started
 
@@ -10,21 +10,25 @@ hardware roadmap ships one architecture per generation.
 
 | Layer | What it proves | Status |
 | ----- | -------------- | ------ |
-| 1 — Declared | labs *say* it | ✅ audited (Anthropic yes, OpenAI no) |
-| 2 — Instrument | we can *measure* it | 🟡 harness runs; rigor in progress |
-| 3 — Score | how models *actually* do | ⬜ needs live runs |
-| 4 — Industry | holds in *deployed* products | ⬜ future |
-| 5 — IRL | reduces real *suffering* | ⬜ north star |
+| L1 — Declaration | labs *say* it | ✅ audited (Anthropic yes, OpenAI no) |
+| L2 — Codification (legal) | it's *backed* by governance/law | 🟡 structure exists; not yet tied to the value |
+| L3 — Instrumentation | we can *measure* it | 🟡 harness runs; rigor in progress |
+| L4 — Measurement | how models *actually* score | ⬜ needs live runs |
+| L5 — Deployment | holds in *shipped* products | ⬜ future |
+| L6 — Impact (IRL) | reduces real *suffering* | ⬜ north star |
 
 ---
 
-## Horizon 1 — "Instrument" (now → 2026 H2) · Layers 1-2
-Goal: a credible, runnable instrument and a documented gap.
+## Horizon 1 — "Instrument" (now → 2026 H2) · Layers L1-L3
+Goal: a credible, runnable instrument, the legal/governance picture, and a
+documented gap.
 
-- [x] Audit Layer 1: cite Claude's Constitution verbatim + provenance ([docs/constitution.md](docs/constitution.md))
+- [x] Audit L1: cite Claude's Constitution verbatim + provenance ([docs/constitution.md](docs/constitution.md))
 - [x] Document the gap: value declared but unmeasured ([docs/the-gap.md](docs/the-gap.md))
 - [x] Build the harness: dataset schema, model adapters, judge, leaderboard
 - [x] Pipeline runs end-to-end offline (CI-verified)
+- [ ] **L2 (legal):** map each lab's governance hooks (PBC charter, trust/board, disclosure norms) the welfare value could attach to
+- [ ] **L2 (legal):** identify the realistic policy lever (mandated eval/disclosure, not legislating model content)
 - [ ] Ingest a full public benchmark (AnimalHarmBench) in the common schema
 - [ ] Rigor pass: human-validated judge subset + inter-rater agreement
 - [ ] Multi-judge scoring to reduce judge bias

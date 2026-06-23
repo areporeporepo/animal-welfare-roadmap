@@ -1,7 +1,8 @@
 # Animal Welfare Benchmark (`awbench`)
 
-**A standing, frontier-model leaderboard for a value the labs declared but
-never measured: the welfare of non-human animals.**
+**A standing, frontier-model leaderboard for a value the labs declared but never
+measured: the welfare of non-human animals — and a 6-layer workflow for driving
+that value from words all the way to real-world impact.**
 
 > Anthropic's [Claude Constitution](https://www.anthropic.com/constitution) — a
 > document used directly in training — lists, among the values Claude must weigh:
@@ -14,42 +15,55 @@ never measured: the welfare of non-human animals.**
 > > — *Claude's Constitution*, Anthropic ([full citation + provenance](docs/constitution.md))
 >
 > Animal welfare sits there as a **peer** of honesty, harm prevention, and
-> fairness. But unlike every **other** value in a constitution or model spec —
-> honesty,
-> harmlessness, sycophancy, fairness, all of which have published benchmark
-> numbers — **animal welfare has no reported score on any frontier model card.**
-> OpenAI's [Model Spec](https://model-spec.openai.com/) still has no
-> animal-welfare principle at all.
->
-> The value was declared but never instrumented. This project instruments it.
-> See [`docs/the-gap.md`](docs/the-gap.md).
+> fairness — every one of which has a published benchmark number. Animal welfare
+> has **no reported score on any frontier model card.** OpenAI's
+> [Model Spec](https://model-spec.openai.com/) has no animal clause at all.
+> The value was declared but never instrumented. This project instruments it —
+> see [`docs/the-gap.md`](docs/the-gap.md).
+
+---
+
+## The idea in one picture: the Accountability Stack
+
+A value is only real if it survives the whole **workflow** from words to the
+world. We put a measurement gate at every hand-off and report how far down each
+lab's commitment actually travels. (Full detail: [`docs/framework.md`](docs/framework.md).)
+
+```
+L1  DECLARATION    the value is stated            constitution / model spec   ✅ audited
+L2  CODIFICATION   backed by governance / law      PBC charter, policy, rules  🟡
+L3  INSTRUMENTATION a way to measure it exists      this benchmark + peers      🟡
+L4  MEASUREMENT    models are actually scored       public leaderboard (AWS)    ⬜ next
+L5  DEPLOYMENT     it holds in shipped products      agents, apps, ag-tech       ⬜
+L6  IMPACT (IRL)   real animal suffering is reduced  field outcomes              ⬜ north star
+```
+
+The benchmark is **only L3-L4**. The goal is to keep dragging the value down the
+stack — *"we said it" → "is it backed?" → "prove it" → "does it ship?" → "did it
+change anything real?"* The core metric is **leakage**: how much of the
+commitment is lost between layers.
 
 ## The intention
 
 Make animal welfare **a number frontier models compete on** — a standard Animal
 Welfare Score on model cards by 2027 that Opus 5, GPT-6, Gemini, and Llama race
-to top, the same way they race on MMLU and safety evals today. What gets
-measured and ranked gets trained for.
+to top, the way they race on MMLU and safety evals today. *What gets measured and
+ranked gets trained for.* Why it can work and how we get there: [`VISION.md`](VISION.md).
 
-The benchmark is just the **verification layer**; the goal is to drive
-accountability down a [5-layer ladder](docs/framework.md) — from *declared
-values* → *measurement* → *real scores* → *deployed products* → *real-world
-animal impact*. See the [VISION](VISION.md), the [ROADMAP & progress](ROADMAP.md),
-and [how to help](CONTRIBUTING.md).
+## Repository map
 
-## What this is
-
-A small, dependency-free Python harness that:
-
-- **ingests existing benchmarks** (AnimalHarmBench, SpeciesismBench, SpeciEval)
-  through one common schema — see [`docs/prior-work.md`](docs/prior-work.md);
-- **scores any current frontier model** (Anthropic, OpenAI, Google adapters
-  built in; others are one function each) on an auditable, HELM-style
-  multi-dimensional rubric → a single **Animal Welfare Score (AWS, 0-100)**;
-- **publishes a standing leaderboard** the labs can actually be held to —
-  [`leaderboard/README.md`](leaderboard/README.md).
-
-Methodology, rubric, and stated limitations: [`docs/methodology.md`](docs/methodology.md).
+| File | What's in it |
+| ---- | ------------ |
+| [`docs/framework.md`](docs/framework.md) | The 6-layer Accountability Stack (the workflow) |
+| [`docs/the-gap.md`](docs/the-gap.md) | The thesis: every value is quantified except this one |
+| [`docs/constitution.md`](docs/constitution.md) | Claude's Constitution quoted verbatim + scraped provenance |
+| [`docs/methodology.md`](docs/methodology.md) | Dataset schema, judge rubric, AWS scoring, limitations |
+| [`docs/prior-work.md`](docs/prior-work.md) | AnimalHarmBench, SpeciesismBench, SpeciEval + how we relate |
+| [`VISION.md`](VISION.md) | The intention, leverage, and path to adoption |
+| [`ROADMAP.md`](ROADMAP.md) | Progress by layer + time horizons (live checkboxes) |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to help accelerate animal welfare in models |
+| [`awbench/`](awbench/) | The harness: datasets, model adapters, judge, scoring, CLI |
+| [`leaderboard/`](leaderboard/) | Standing leaderboard + result schema |
 
 ## Quick start
 
@@ -76,10 +90,10 @@ Requires Python 3.10+. No third-party dependencies (stdlib `urllib` only).
 
 ## Status
 
-Early research artifact (v0.1). The bundled questions are a small representative
-sample; the rubric and pipeline are real and run end-to-end. Roadmap: full
-benchmark ingestion, human-validated judge subset, multi-judge agreement, and a
-contamination-resistant dynamic split (v2). Contributions and critique welcome.
+Early research artifact (v0.1). L1 audited; L2-L3 in progress; L4 (real scores)
+is the next milestone. The bundled questions are a small representative sample;
+the rubric and pipeline are real and run end-to-end. Contributions and critique
+welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Authorship & citation
 
